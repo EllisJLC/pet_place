@@ -1,0 +1,85 @@
+#description-box {
+  position: relative;
+  background: #f13939;
+  color: #FFFFFF;
+  font-family: Arial;
+  font-size: 20px;
+  line-height: 120px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 2px 10px 2px;
+}
+
+#description-box:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 1;
+  z-index: 1;
+  border-style: solid;
+  border-width: 20px 0 0 20px;
+  border-color: transparent transparent transparent #f05050;
+  top: -20px;
+  left: 50%;
+  margin-left: -10px;
+}
+
+#logout,
+#add,
+#login-btn {
+  padding: 2px;
+  color: #1b89bc;
+  border: 1px solid #1b89bc;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-image: url("../images/pets_background.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: contain;
+}
+body::after {
+  content: "";
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background-attachment: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#title {
+  color: rgb(4, 0, 255);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#pets-page {
+  background-color:white;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+#sex-dropdown {
+  position: relative;
+  display: inline-block;
+  width:80px;
+}
+
+#species-dropdown {
+  position: relative;
+  display: inline-block;
+  width:60px;
+}
+
+#description {
+  padding-top:100px;
+}
+
