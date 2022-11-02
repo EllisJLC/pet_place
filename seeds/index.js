@@ -1,21 +1,7 @@
-const sequelize = require('../config/connection');
-const {User, Pet} = require('../models/');
-const petData = require('./petData.json');
-const userData = require('./userData.json')
-
-// const seedDatabase = async () => {
-//   await sequelize.sync({ force: true });
-
-//   await Pet.bulkCreate(petData, {
-//     individualHooks: true,
-//     returning: true,
-//   });
-
-//   process.exit(0);
-// };
-
-// seedDatabase();
-
+const sequelize = require("../config/connection");
+const { User, Pet } = require("../modelsxx");
+const petData = require("./petData.json");
+const userData = require("./userData.json");
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
